@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Images/house.png" type="image/x-icon">
+  <title>bear shop.YG</title>
+</head>
+<body>
+  <header><img src="Images/logo1.jpeg" alt=""></header>
+  <nav>
+    <button id="btn-cart">
+      <i class="fas fa-cart-plus"></i>
+      <p id="p-counter">0</p>
+    </button>    
+  </nav>
+  <main id = "mains">
+    <div id = "containerProduct">
+        <button id = "createNew">crear producto nuevo</button>
+        <div id = "modal">
+            <button id = "closeModal">cerrar modal</button>
+            <input type="text" id = "newProduct" placeholder="producto">
+            <input type="text" id = "newprice" placeholder="price">
+            <input type="file" id = "newImeg">
+            <button id = "btnNewAdd">agregar nuevo producto</button>
+        </div>
+      <section>
+        <h2>Escandalosos</h2>
+        <select name="" id="select-products" aria-placeholder="selecciona algun producto">
+          <option value="">Selecciona Algún producto</option>      
+        </select>
+      </section>
+    </main>
+    </div>
+  
+  <main id="main-market"></main>
+  <footer><h3>Yuly Gallego - Software</h3>
+    <h3>Numero de contacto: 72618327949</h3></footer>
+  <script src="productsEscan.js"></script>
+  <script src="appAgregar.js"></script>
+</body>
+</html>
