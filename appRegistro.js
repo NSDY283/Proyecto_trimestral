@@ -10,6 +10,7 @@ let id = 0;
 frmlogin.addEventListener("submit",registerUser);
 
 function registerUser(event){
+
     event.preventDefault();
 
     id++;
@@ -18,7 +19,7 @@ function registerUser(event){
         id: id,
         user: username.value,
         idc: idc.value,
-        password:password.value,
+        password: password.value,
         confPassword: confPassword.value
     };
 
@@ -35,7 +36,7 @@ function registerUser(event){
         alert ("la contraseña no coinside")
     }
 
-    else if (userRegister.find(user => user.user === user.value)){
+    else if (userRegister.find(user => user.user === username.value)){
         alert ("el usuario ya existe")
     }
 
