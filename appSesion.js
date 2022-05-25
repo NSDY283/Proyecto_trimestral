@@ -1,6 +1,6 @@
 const username = document.getElementById('username');
 const password = document.getElementById('password');
-const frmlogin = document.getElementById('fmr-login');
+const frmlogin = document.getElementById('frm-login');
 
 frmlogin.addEventListener('submit',loginUser);
 
@@ -26,6 +26,6 @@ function loginUser (event){
         else{
             alert ("el usuario fue logueado con exito")
 
-            window.location.herf =""
+            window.location.herf ="./index.html"
         }
 }
