@@ -12,9 +12,6 @@ body{
     height: 100vh;
 }
 
-main{
-    background: #F1C3D7;
-}
 
 /* Estilos pagina ingreso */
 
@@ -75,12 +72,13 @@ main{
     display: grid;
     grid-template-columns: 15% 85%;
     text-align: center;
+    color: #a85b82;
     position: relative;
 }
 
 .user-pass i{
     text-align: center;
-    line-height: 55px;
+    line-height: 60px;
     color: #a85b82;
     font-size: 1.8rem;
 }
@@ -89,10 +87,12 @@ main{
     background: none;
     outline: none;
     border: none;
-    line-height: 1;
+    /* line-height: 1; */
+    border-radius: 0px 55px 55px 0px;
     font-weight: 600;
     font-size: 1.3rem;
     color: #a85b82;
+    background-color: #F5EDF2;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -101,15 +101,15 @@ main{
     text-decoration: none;
     color: #F5EDF2;
     font-size: 1.6rem;
-    margin: 1.5rem;
+    margin: 1.3rem;
 }
 
 #btn-login{
     background: #71C7A9;
     border:none;
     text-decoration: none;
-    height: 8%;
-    width: 35%;
+    height: 16.5%;
+    width: 51%;
     cursor: pointer;
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
@@ -122,8 +122,9 @@ main{
     background: #71C7A9;
     border:none;
     text-decoration: none;
-    height: 8%;
-    width: 35%;
+    color: #ffffff;
+    height: 16.6%;
+    width: 51%;
     cursor: pointer;
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
@@ -135,7 +136,79 @@ main{
     width: 93%;
 }
 
+#frm-login{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* fin de pagina ingreso */
+
+
+
+/* Estilos de pagina de registro */
+
+.container-register{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('./image/Sweet Marine.png')
+}
+
+.container-divR{
+    width: 83%;
+    height: 85%;
+    background: #E466A4;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.image-register img{
+    width: 95%;
+}
+
+.image-register{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.formulario-reg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frm-register{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#crearCuentaR{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #F5EDF2;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+/* fin de pagina registro */
 
 
 
