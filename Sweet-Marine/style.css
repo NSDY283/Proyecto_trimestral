@@ -594,14 +594,17 @@ body{
 .modal{
     width: 50%;
     height: 60%;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 18px;
     background-color:#F7C8DA;
     transition:transform 0.7s;
     transform:translateY(0%);
+    padding-left: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     overflow: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     /* align-items: center; */
 }
 
@@ -629,12 +632,12 @@ body{
     font-weight: none;
   }
 
-  .fila1{
+ .fila1{
     overflow: hidden;
 }
 
 .fila2{
-    height: 2.8rem;
+    height: 3rem;
     background: #e466a5;
     color: #ffffff;
     font-size: 1.5rem;
@@ -675,6 +678,40 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: none;
   }
+
+  .fila11{
+    overflow: hidden;
+}
+
+.fila22{
+    overflow: hidden;
+}
+
+.fila33{
+    overflow: hidden;
+}
+
+.fila44{
+    height: 3rem;
+    background: #e466a5;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 9px 0px 0px 9px;
+    font-weight: none;
+}
+
+.fila55{
+    height: 2.8rem;
+    background: #e466a5;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    border-radius: 0px 9px 9px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: none;
+}
   
   .price{
     width: 10rem;
