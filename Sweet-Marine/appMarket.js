@@ -3,6 +3,8 @@ const selectProducts = document.getElementById('select-products');
 const tabla = document.getElementById('container-table')
 const button = document.createElement("button");
 
+const total = document.querySelector('.fila55')
+
 const cerrar = document.querySelector('.close');
 const abrirM = document.querySelector('#btn-cart');
 const modal = document.querySelector('.modal');
@@ -130,7 +132,7 @@ function createCards(product) {
     const tableProducts = document.createElement("td");
     const productPrice = document.createElement("td");
     const countProduct = document.createElement("td");
-    const prestoPagap = document.createElement("p");
+    const totalPagar = document.createElement("p");
     const countProductp = document.createElement("p");
     const resta = document.createElement("button");
     const suma = document.createElement("button");
@@ -159,7 +161,7 @@ function createCards(product) {
     tableProducts.textContent = name;
     productPrice.textContent = price;
     countProductp.textContent = 1;
-    prestoPagap.textContent = price;
+    totalPagar.textContent = price;
 
     productPrice.classList.add("price");
     tableProducts.classList.add("product");
@@ -194,8 +196,8 @@ function createCards(product) {
     // let contadoro = 0;
     
     let contador = 1;
+    // let contadorp = price;
     function prestoSuma(){
-      let contadorp = price;
 
 
       contadorp = contadorp + contador * price;
@@ -204,12 +206,12 @@ function createCards(product) {
 
       countProductp.textContent = contador;
       
-      prestoPagap.textContent = contadorp;
+      totalPagar.textContent = contadorp;
     }
 
     // let contador = 1;
+    let contadorp = price;
     function prestoResta(){
-      let contadorp = price;
 
 
       contadorp = contadorp - contador  * price;
@@ -218,8 +220,16 @@ function createCards(product) {
 
       countProductp.textContent = contador;
       
-      prestoPagap.textContent = contadorp * -1
+      totalPagar.textContent = contadorp * -1
     }
+
+    let contadorS = contador;
+
+    let contadorR = contador;
+
+    let contadorTotal = contadorR + contadorS;
+
+    total.textContent = contadorTotal;
   }
 }
 
